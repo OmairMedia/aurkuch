@@ -67,7 +67,6 @@ import retrofit2.Callback;
 
 public class SplashActivity extends AppCompatActivity implements EasyPermissions.PermissionCallbacks {
 
-    @BindView(R.id.app_text)
     TextView appText;
     private Context context;
     private Activity activity;
@@ -97,7 +96,7 @@ public class SplashActivity extends AppCompatActivity implements EasyPermissions
 //        setBounceAnimation();
 //        runnable = () -> appText.startAnimation(bounceAnim);
         handler = new Handler();
-        appText.setVisibility(View.GONE);
+
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -110,14 +109,14 @@ public class SplashActivity extends AppCompatActivity implements EasyPermissions
     private void slideUpTransition() {
         Transition transition = new Slide(Gravity.BOTTOM);
         transition.setDuration(1000);
-        transition.addTarget(appText);
+//        transition.addTarget(appText);
         TransitionManager.beginDelayedTransition(parent, transition);
-        appText.setVisibility(View.VISIBLE);
+//        appText.setVisibility(View.VISIBLE);
     }
 
     private void setBounceAnimation() {
         bounceAnim = AnimationUtils.loadAnimation(context, R.anim.bounce_animation);
-        appText.startAnimation(bounceAnim);
+//        appText.startAnimation(bounceAnim);
         bounceAnim.setAnimationListener(new Animation.AnimationListener() {
             @Override
             public void onAnimationStart(Animation animation) {

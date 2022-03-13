@@ -25,5 +25,6 @@
     <color name="red_status">#FF0000</color>
     <color name="green_status">#007C00</color>
     <color name="yellow_status">#FFC107</color>
+    <color name="black_normal">#000333</color>
 
 </resources>

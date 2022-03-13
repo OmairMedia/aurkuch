@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/scanner_line"
     android:gravity="center"
-    android:background="@color/colorPrimary"
     android:orientation="vertical"
     tools:context=".activity.OTPActivity">
 
@@ -13,118 +13,130 @@
         android:id="@+id/text_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="@color/white"
+        android:fontFamily="@font/poppins"
+        android:gravity="center"
         android:padding="10dp"
         android:text="Verification code has been sent to your phone number. Check your sms box and enter the code below"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:gravity="center"/>
+        android:textColor="@color/white" />
+
     <LinearLayout
-        android:visibility="gone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center">
+        android:gravity="center"
+        android:visibility="gone">
+
         <EditText
             android:id="@+id/otp_et1"
             android:layout_width="30dp"
             android:layout_height="wrap_content"
-            android:hint="*"
-            android:gravity="center"
-            android:background="@color/white"
-            android:padding="5dp"
-            android:textSize="20sp"
-            android:textColor="@color/black"
-            app:backgroundTint="@color/white"
             android:layout_marginEnd="5dp"
-            android:textColorHint="@color/black_alpha"/>
+            android:background="@color/white"
+            android:gravity="center"
+            android:hint="*"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black_alpha"
+            android:textSize="20sp"
+            app:backgroundTint="@color/white" />
+
         <EditText
             android:id="@+id/otp_et2"
             android:layout_width="30dp"
             android:layout_height="wrap_content"
-            android:hint="*"
-            android:gravity="center"
-            android:background="@color/white"
-            android:padding="5dp"
-            android:textSize="20sp"
-            android:textColor="@color/black"
-            app:backgroundTint="@color/white"
             android:layout_marginEnd="5dp"
-            android:textColorHint="@color/black_alpha"/>
+            android:background="@color/white"
+            android:gravity="center"
+            android:hint="*"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black_alpha"
+            android:textSize="20sp"
+            app:backgroundTint="@color/white" />
+
         <EditText
             android:id="@+id/otp_et3"
             android:layout_width="30dp"
             android:layout_height="wrap_content"
-            android:hint="*"
-            android:gravity="center"
-            android:background="@color/white"
-            android:padding="5dp"
-            android:textSize="20sp"
-            android:textColor="@color/black"
-            app:backgroundTint="@color/white"
             android:layout_marginEnd="5dp"
-            android:textColorHint="@color/black_alpha"/>
+            android:background="@color/white"
+            android:gravity="center"
+            android:hint="*"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black_alpha"
+            android:textSize="20sp"
+            app:backgroundTint="@color/white" />
+
         <EditText
             android:id="@+id/otp_et4"
             android:layout_width="30dp"
             android:layout_height="wrap_content"
-            android:hint="*"
-            android:gravity="center"
+            android:layout_marginEnd="5dp"
             android:background="@color/white"
+            android:gravity="center"
+            android:hint="*"
             android:padding="5dp"
-            android:textSize="20sp"
             android:textColor="@color/black"
-            app:backgroundTint="@color/white"
             android:textColorHint="@color/black_alpha"
+            android:textSize="20sp"
 
-            android:layout_marginEnd="5dp"/>
+            app:backgroundTint="@color/white" />
+
         <EditText
             android:id="@+id/otp_et5"
             android:layout_width="30dp"
             android:layout_height="wrap_content"
-            android:hint="*"
-            android:gravity="center"
+            android:layout_marginEnd="5dp"
             android:background="@color/white"
+            android:gravity="center"
+            android:hint="*"
             android:padding="5dp"
-            android:textSize="20sp"
             android:textColor="@color/black"
-            app:backgroundTint="@color/white"
             android:textColorHint="@color/black_alpha"
-            android:layout_marginEnd="5dp"/>
+            android:textSize="20sp"
+            app:backgroundTint="@color/white" />
+
         <EditText
             android:id="@+id/otp_et6"
             android:layout_width="30dp"
             android:layout_height="wrap_content"
-            android:hint="*"
-            android:gravity="center"
+            android:layout_marginEnd="5dp"
             android:background="@color/white"
+            android:gravity="center"
+            android:hint="*"
             android:padding="5dp"
-            android:textSize="20sp"
             android:textColor="@color/black"
-            app:backgroundTint="@color/white"
             android:textColorHint="@color/black_alpha"
-            android:layout_marginEnd="5dp"/>
+            android:textSize="20sp"
+            app:backgroundTint="@color/white" />
     </LinearLayout>
+
     <EditText
         android:id="@+id/otp_et"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:hint="code"
-        android:textSize="18sp"
-        android:textColor="@color/white"
-        android:background="@drawable/bg_rounded_stroke_inverse"
-        android:padding="10dp"
-        app:backgroundTint="@color/white"
-        android:gravity="center"
-        android:inputType="number"
-        android:textColorHint="@color/black_alpha"
-        android:layout_marginTop="10dp"/>
-    <Button
-        android:id="@+id/submit_btn"
-        android:layout_width="wrap_content"
+        android:layout_width="210dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:background="@drawable/bg_rounded_stroke_inverse"
+        android:fontFamily="@font/poppins"
+        android:gravity="center"
+        android:hint="code"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/black_alpha"
+        android:textSize="18sp"
+        app:backgroundTint="@color/white" />
+
+    <Button
+        android:id="@+id/submit_btn"
+        android:layout_width="129dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_rounded_stroke_inverse"
+        android:fontFamily="@font/poppins"
         android:text="Submit"
         android:textAllCaps="false"
-        android:textColor="@color/colorPrimary"
-        android:background="@drawable/bg_rounded_stroke_inverse"/>
+        android:textColor="@color/black" />
 
 </LinearLayout>
