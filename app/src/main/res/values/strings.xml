@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Aur Kuch</string>
+    <string name="no_connection_string">No network connection available.</string>
+    <string name="google_play_services_string">This app requires Google Play Services. Please install
+        Google Play Services on your device and relaunch this app.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ok">ok</string>
+    <string name="congratulationa">Congratulations!</string>
+    <string name="name">Name</string>
+    <string name="mobile_no">Mobile no.(i.e. 3001234567)</string>
+    <string name="required">Required</string>
+    <string name="info_string">Only one account can be registered from one device. Make sure that you are not trying to register another account from same device</string>
+    <string name="email">Email</string>
+    <string name="subscribe_login">While subscribing, login from the account you are using with this application, otherwise you will not get the reward.</string>
+
+    <string name="title_home">Home</string>
+    <string name="title_wallet">Wallet</string>
+    <string name="title_invite">Invite</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_setting">Settings</string>
+    <string name="watched_string">Watched 0 seconds</string>
+    <string name="history">History</string>
+    <string name="share_string">Download this app https://play.google.com/store/apps/details?id=games.onebutton.golfbattle and use my referral code to get free cash. Referral code = </string>
+    <string name="app_link">https://play.google.com/store/apps/details?id=games.onebutton.golfbattle</string>
+    <string name="quote_with_link">Download app from given  link and use my referrel code to get free cash, Referral code = </string>
+    <string name="facebook_app_id">2386733998308579</string>
+    <string name="invite_your_friends_string">Invite your friends to join, Rs. 100 for you and your friends!</string>
+    <string name="lets_get_social">Lets get social</string>
+    <string name="invite_friends">Invite Friends!</string>
+    <string name="invite_your_firends_to_get_cash">Invite your firends to get cash.</string>
+    <string name="referral_code">Your Referral code</string>
+    <string name="rs_2000">Rs 2000</string>
+    <string name="see_benefit"><![CDATA[See Benefit >]]></string>
+    <string name="reward_categories">Reward Categories</string>
+    <string name="channel_name">kuch aur channel</string>
+    <string name="channel_description">description for kuch aur app channel</string>
+    <string name="watch_video">Watch Video</string>
+    <string name="next_video">Next video</string>
+    <string name="skip_video">Skip video</string>
+
+</resources>

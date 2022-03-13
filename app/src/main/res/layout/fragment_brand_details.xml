@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <LinearLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        app:elevation="2dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:paddingTop="3dp"
+            android:padding="5dp"
+            app:srcCompat="@drawable/icon_back"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center|start"
+            android:text="Brand details"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginStart="10dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_bar">
+
+        <ImageView
+            android:id="@+id/brand_image"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/activatedicon"
+            android:contentDescription="@string/app_name" />
+    </LinearLayout>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/button_scan_qr"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        app:backgroundTint="@color/colorPrimaryDark"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="15dp"
+        android:tint="@android:color/white"
+        app:srcCompat="@drawable/ic_qrcode" />
+
+    <LinearLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topLayout"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:weightSum="1">
+            <TextView
+                android:id="@+id/brand_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Kuch Aur App"
+                android:textColor="@color/colorPrimary"
+                android:textSize="24sp"
+                android:paddingTop="5dp"
+                android:layout_weight="0.7"
+                android:paddingBottom="5dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/rewards_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 rewards left"
+                android:layout_weight="0.3"
+                android:gravity="end"
+                android:layout_gravity="end|center_vertical"
+                android:textColor="@color/off_black"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/brand_offer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="V 1.00"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/brand_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Description"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/reward_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            tools:text="You will get +100 credit for watching this video"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:padding="5dp"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

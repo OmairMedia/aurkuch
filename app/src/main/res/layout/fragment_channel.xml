@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.ChannelFragment">
+
+    <LinearLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        app:elevation="2dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:paddingTop="3dp"
+            android:padding="5dp"
+            app:srcCompat="@drawable/icon_back"
+            tools:ignore="VectorDrawableCompat"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center|start"
+            android:text="Subscribe Channel"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginStart="10dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_bar"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/channel_image"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/icon_coins"
+            android:contentDescription="@string/app_name" />
+        <TextView
+            android:id="@+id/channel_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/channel_image"
+            android:layout_alignStart="@id/channel_image"
+            android:layout_alignEnd="@id/channel_image"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+            tools:text="Channel name" />
+
+        <TextView
+            android:id="@+id/rewards_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/channel_name"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:text="3 rewards left"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"/>
+
+
+        <TextView
+            android:id="@+id/reward_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/channel_name"
+            android:layout_marginTop="10dp"
+            tools:text="Reward amount: Rs. 100"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:padding="5dp"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"/>
+
+        <TextView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_below="@id/channel_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            tools:text="You will get +100 credit for watching this video"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:padding="5dp"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"/>
+
+        <Button
+            android:id="@+id/subscribe_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="subscribe"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/reward_tv"
+            android:layout_margin="10dp"
+            android:background="@drawable/gradiant_blutype"
+            style="@style/NormalButton"/>
+
+        <LinearLayout
+            android:layout_below="@id/subscribe_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/subscribe_btn"
+            android:layout_alignStart="@id/subscribe_btn"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/prev_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="previous channel"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/gradiant_blutype"
+                style="@style/NormalButton"/>
+
+            <Button
+                android:id="@+id/next_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="next channel"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/gradiant_blutype"
+                style="@style/NormalButton"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/no_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:srcCompat="@drawable/nodata_found"
+        android:contentDescription="@string/app_name"
+        android:visibility="gone"/>
+    <ImageView
+        android:id="@+id/no_internet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/no_internet"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/app_name"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/dots_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:gravity="center">
+        <com.eyalbira.loadingdots.LoadingDots
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+
+            app:LoadingDots_auto_play="true"
+
+            app:LoadingDots_dots_color="@android:color/holo_blue_light"
+            app:LoadingDots_dots_count="4"
+            app:LoadingDots_dots_size="20dp"
+            app:LoadingDots_dots_space="1dp"
+
+            app:LoadingDots_loop_duration="800"
+            app:LoadingDots_loop_start_delay="100"
+
+            app:LoadingDots_jump_duration="200"
+            app:LoadingDots_jump_height="4dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

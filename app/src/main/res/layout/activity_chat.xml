@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.ChatActivity"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:paddingTop="3dp"
+            android:padding="5dp"
+            app:srcCompat="@drawable/icon_back"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            tools:ignore="VectorDrawableCompat"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center|start"
+            android:text="Contact us"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginStart="10dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_bar">
+
+        <!--<View-->
+        <!--android:background="@color/colorWhite"-->
+        <!--android:id="@+id/activity_chat_header_space"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+
+        <!--app:layout_constraintHeight_percent=".03"-->
+
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--app:layout_constraintBottom_toTopOf="@id/activity_chat_header"/>-->
+
+
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:background="@color/white"-->
+
+<!--            android:visibility="gone"-->
+<!--            android:id="@+id/activity_chat_header"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="0dp"-->
+<!--            app:layout_constraintHeight_percent=".09"-->
+
+<!--            app:layout_constraintLeft_toLeftOf="parent"-->
+<!--            app:layout_constraintRight_toRightOf="parent"-->
+<!--            app:layout_constraintBottom_toTopOf="@id/relativeLayoutChatt"-->
+<!--            >-->
+
+<!--            <Space-->
+<!--                android:id="@+id/activity_chat_header_inner_space"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="0dp"-->
+
+<!--                app:layout_constraintWidth_percent=".05"-->
+
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintRight_toRightOf="parent"-->
+<!--                app:layout_constraintLeft_toRightOf="@id/activity_chat_header_doctor"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+
+<!--                />-->
+
+<!--            <ImageView-->
+
+<!--                android:id="@+id/back_iv"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:scaleType="centerCrop"-->
+<!--                android:padding="5dp"-->
+<!--                app:srcCompat="@drawable/icon_back"-->
+<!--                app:layout_constraintDimensionRatio="1:1"-->
+<!--                app:layout_constraintHeight_percent=".7"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintRight_toLeftOf="@+id/activity_chat_header_doctor"-->
+<!--                app:layout_constraintLeft_toLeftOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+<!--            <TextView-->
+
+<!--                android:textSize="20sp"-->
+<!--                android:paddingStart="15dp"-->
+<!--                android:paddingEnd="15dp"-->
+<!--                android:textColor="@color/black"-->
+
+<!--                android:id="@+id/activity_chat_header_doctor"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:text="Contact us"-->
+<!--                android:gravity="center|start"-->
+
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintLeft_toRightOf="@id/back_iv"-->
+<!--                app:layout_constraintRight_toRightOf="parent"-->
+<!--                app:layout_constraintWidth_percent=".85"-->
+
+<!--                />-->
+
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutChatt"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+
+            android:fitsSystemWindows="true"
+            app:layout_constraintHeight_percent="1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+
+
+            <RelativeLayout
+                android:id="@+id/relativeLayoutChat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="70dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/chat_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+            </RelativeLayout>
+
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:background="@color/white"
+                android:id="@+id/activity_chat_footer"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+
+                android:layout_alignParentBottom="true"
+                >
+
+                <ImageView
+                    android:id="@+id/send_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/message_et"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:tint="@color/colorPrimary"
+
+                    android:padding="13dp"
+
+                    app:srcCompat="@drawable/ic_send"
+                    app:layout_constraintHeight_percent=".66"
+                    app:layout_constraintWidth_percent=".15"
+                    app:layout_constraintVertical_bias="0.2"
+
+                    />
+
+                <EditText
+                    android:id="@+id/message_et"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:hint="Type message here...."
+                    android:padding="5dp"
+                    app:backgroundTint="@android:color/transparent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHeight_percent=".8"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/send_iv"
+
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.48000002"
+                    app:layout_constraintWidth_percent=".8"
+
+                    />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="3dp"
+    app:cardBackgroundColor="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/app_name"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/coin_image"/>
+        <TextView
+            android:id="@+id/congrats_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/congratulationa"
+            style="@style/TextAppearance.AppCompat.Large"
+            android:layout_below="@id/image_view"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/credit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/icon_coins"
+            tools:text="+450 credit"
+            android:gravity="center"
+            android:textColor="@color/colorYellow"
+            android:layout_below="@id/congrats_tv"
+            android:layout_centerHorizontal="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+
+        <Button
+            android:id="@+id/ok_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@id/credit_text"
+            android:text="@string/ok"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_rounded_stroke_inverse" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

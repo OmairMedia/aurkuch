@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "890185418221",
+    "firebase_url": "https://arcane-talent-256007.firebaseio.com",
+    "project_id": "arcane-talent-256007",
+    "storage_bucket": "arcane-talent-256007.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:890185418221:android:f3e495fa73d50ae43013e4",
+        "android_client_info": {
+          "package_name": "com.basitobaid.youtubeapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "890185418221-se54h61bd5midl41e57dblkijjmhgoik.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.basitobaid.youtubeapp",
+            "certificate_hash": "71feec960a100ada9a43df1c2ca13a0fef9a06b8"
+          }
+        },
+        {
+          "client_id": "890185418221-75h5fv3ta77170h2bgoj5vu3s6nhbuta.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfQofmiMTK4w7N0_TpIJVTIYQg4j5YAHU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "890185418221-75h5fv3ta77170h2bgoj5vu3s6nhbuta.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
