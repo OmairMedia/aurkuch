@@ -43,6 +43,9 @@ dependencies {
     implementation 'com.google.android.material:material:1.1.0-beta01'
     implementation 'com.google.android.gms:play-services-auth:17.0.0'
 
+//    View Pager2
+    implementation 'androidx.viewpager2:viewpager2:1.0.0'
+
     //QRcode scanner
     implementation 'com.budiyev.android:code-scanner:2.1.0'
 

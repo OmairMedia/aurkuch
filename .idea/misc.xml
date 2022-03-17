@@ -4,15 +4,19 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Omair Folder/Personal Projects/Aur Kuch App/app/src/main/res/drawable/custom_input_1.xml" value="0.14" />
+        <entry key="..\:/Omair Folder/Personal Projects/Aur Kuch App/app/src/main/res/drawable/onboarding_indicator_active.xml" value="0.1415" />
+        <entry key="..\:/Omair Folder/Personal Projects/Aur Kuch App/app/src/main/res/drawable/onboarding_indicator_inactive.xml" value="0.1415" />
         <entry key="..\:/Omair Folder/Personal Projects/Aur Kuch App/app/src/main/res/layout/activity_login.xml" value="0.1621376811594203" />
         <entry key="..\:/Omair Folder/Personal Projects/Aur Kuch App/app/src/main/res/layout/activity_main.xml" value="0.1621376811594203" />
-        <entry key="..\:/Omair Folder/Personal Projects/Aur Kuch App/app/src/main/res/layout/activity_onboarding.xml" value="0.1621376811594203" />
+        <entry key="..\:/Omair Folder/Personal Projects/Aur Kuch App/app/src/main/res/layout/activity_onboarding.xml" value="0.22" />
         <entry key="..\:/Omair Folder/Personal Projects/Aur Kuch App/app/src/main/res/layout/activity_otp.xml" value="0.25" />
         <entry key="..\:/Omair Folder/Personal Projects/Aur Kuch App/app/src/main/res/layout/activity_privacy_policy.xml" value="0.1621376811594203" />
         <entry key="..\:/Omair Folder/Personal Projects/Aur Kuch App/app/src/main/res/layout/activity_registration.xml" value="0.25" />
         <entry key="..\:/Omair Folder/Personal Projects/Aur Kuch App/app/src/main/res/layout/activity_splash.xml" value="0.22" />
         <entry key="..\:/Omair Folder/Personal Projects/Aur Kuch App/app/src/main/res/layout/fragment_onboarding_1.xml" value="0.2" />
+        <entry key="..\:/Omair Folder/Personal Projects/Aur Kuch App/app/src/main/res/layout/items_container_onboarding.xml" value="0.14356884057971014" />
         <entry key="..\:/Omair Folder/Personal Projects/Aur Kuch App/app/src/main/res/layout/onboarding_layout.xml" value="0.1621376811594203" />
+        <entry key="..\:/Omair Folder/Personal Projects/Aur Kuch App/app/src/main/res/menu/bottom_nav_menu.xml" value="0.16875" />
         <entry key="..\:/Omair Folder/Personal Projects/YoutubeApp/app/src/main/res/layout/activity_chat.xml" value="0.14130434782608695" />
         <entry key="..\:/Omair Folder/Personal Projects/YoutubeApp/app/src/main/res/layout/activity_login.xml" value="0.1621376811594203" />
         <entry key="..\:/Omair Folder/Personal Projects/YoutubeApp/app/src/main/res/layout/activity_main.xml" value="0.16" />
